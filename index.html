@@ -6,9 +6,9 @@
     <script>
         const playList = [
             {
-                "listID": 1016467,
+                "listID": 1072383,
                 "vid":[
-                    185500865,185500863,185500855,190336047,190336049,190336051,190336135,190241085,193149145,193149153
+                    199003733,199003735,200790779,200790773
                 ]
             }
         ]
@@ -18,7 +18,7 @@
             const pid = maxIdx(seed);
             const seed2 = seedGen(playList[pid]["vid"].length)
             const vid = maxIdx(seed2);
-            return `https://vod.sooplive.co.kr/player/${playList[pid]["vid"][vid]}/playlist/${playList[pid]["listID"]}`
+            return `https://vod.sooplive.com/player/${playList[pid]["vid"][vid]}/playlist/${playList[pid]["listID"]}`
         }
 
         function seedGen(num=1){
